@@ -1,13 +1,25 @@
-<div class="displayTable">
-    <div class="displayTableCell">
+
   
-      <div class="authBlock">
+    <div class="authBlock">
         <h3>Sign Up</h3>
+
+        
+        <div class="formGroup">
+            <input type="Firstname" class="formControl" placeholder="First Name" #Firtname required>
+          </div>
+          
+          <div class="formGroup">
+            <input type="Lastname" class="formControl" placeholder="Last Name" #Lastname required>
+          </div>
+
+          <div class="formGroup">
+            <input type="PhoneNumber" class="formControl" placeholder="Phone Number" #Lastname required>
+          </div>
   
         <div class="formGroup">
           <input type="email" class="formControl" placeholder="Email Address" #userEmail required>
         </div>
-  
+       
         <div class="formGroup">
           <input type="password" class="formControl" placeholder="Password" #userPwd required>
         </div>
@@ -40,6 +52,3 @@
       <div class="redirectToLogin">
         <span>Already have an account? <span type="button" class="redirect" routerLink="/sign-in">Log In</span></span>
       </div>
-    </div>
-  
-  </div>
