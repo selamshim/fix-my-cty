@@ -1,59 +1,3 @@
-<!-- 
-  
-    <div class="authBlock">
-        <h3>Sign Up</h3>
-
-        
-        <div class="formGroup">
-            <input type="Firstname" class="formControl" placeholder="First Name" #Firtname required>
-          </div>
-          
-          <div class="formGroup">
-            <input type="Lastname" class="formControl" placeholder="Last Name" #Lastname required>
-          </div>
-
-          <div class="formGroup">
-            <input type="PhoneNumber" class="formControl" placeholder="Phone Number" #Lastname required>
-          </div>
-  
-        <div class="formGroup">
-          <input type="email" class="formControl" placeholder="Email Address" #userEmail required>
-        </div>
-       
-        <div class="formGroup">
-          <input type="password" class="formControl" placeholder="Password" #userPwd required>
-        </div>
-  
-        <div class="formGroup">
-          <input type="button" class="btn btnPrimary" value="Sign Up" (click)="authService.SignUp(userEmail.value, userPwd.value)">
-        </div>
-  
-        <div class="formGroup">
-          <span class="or"><span class="orInner">Or</span></span>
-        </div>
-  
-        <div class="formGroup">
-          <button type="button" class="btn googleBtn" (click)="authService.GoogleAuth()">
-            <i class="fab fa-google-plus-g"></i>
-            Continue with Google
-          </button>
-        </div> -->
-  
-        <!-- Continue with Facebook -->
-        <!-- <div class="formGroup">
-          <button type="button" class="btn facebookBtn" (click)="authService.FacebookAuth()">
-            <i class="fab fa-facebook"></i>
-            Continue with Facebook
-          </button>
-        </div>
-      </div>
-  
-      <div class="redirectToLogin">
-        <span>Already have an account? <span type="button" class="redirect" routerLink="/sign-in">Log In</span></span>
-      </div>  -->
-
-
-
       <div class="card">
         <article class="card-body">
           <h3 class="card-title text-center mb-4 mt-1">Sign Up</h3>
@@ -103,7 +47,7 @@
           <div class="form-group">
           <button type="submit" class="btn btn-primary btn-block" (click)="authService.SignUp(userEmail.value, userPwd.value)"> Sign Up  </button>
           </div> 
-          <h4 class="card-title text-center mb-4 mt-1">Or</h4>
+          <h4 class="text-center">Or</h4>
       
           <!-- Calling GoogleAuth Api from AuthService -->
           <div class="text-center">
@@ -112,7 +56,7 @@
               Continue with Google
             </button>
           </div>
-      
+
           <div class="text-center">
             <span>Already have an account?<a type="button" class="redirect" routerLink="/sign-in"> Log In</a></span>
           </div>
