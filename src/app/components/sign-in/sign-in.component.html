@@ -19,13 +19,14 @@
     </div> 
     </div> 
 
-    <!-- Calling SignIn Api from AuthService -->
+   
     <div class="form-group">
-    <button type="submit" class="btn btn-primary btn-block" (click)="authService.SignIn(userName.value, userPassword.value)"> Login  </button>
+      <input type="button" class="btn btnPrimary btn-block" value="Log in" (click)="authService.SignIn(userName.value, userPassword.value)">
+
     </div> 
     <h4 class="card-title text-center mb-4 mt-1">Or</h4>
 
-    <!-- Calling GoogleAuth Api from AuthService -->
+
     <div class="text-center">
       <button type="button" class="btn googleBtn" (click)="authService.GoogleAuth()">
         <i class="fab fa-google-plus-g"></i>
